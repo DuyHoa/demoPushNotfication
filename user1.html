@@ -3,7 +3,6 @@
     <title>Pusher Test</title>
     <script src="https://js.pusher.com/4.3/pusher.min.js"></script>
     <script>
-        var _count = 0;
 
         // Enable pusher logging - don't include this in production
         Pusher.logToConsole = true;
@@ -19,9 +18,9 @@
     <style>
         .dropbtn {
             background-image:url('https://cdn1.iconfinder.com/data/icons/web-ui-2/16/UI_Icons_Outline-18-512.png');
-            background-position: center; /* Center the image */
-            background-repeat: no-repeat; /* Do not repeat the image */
-            background-size: cover; /* Resize the background image to cover the entire container */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; 
             color: white;
             padding: 16px;
             font-size: 16px;
@@ -65,7 +64,7 @@
     <div class="dropdown-content">
         <script>
             channel.bind('my-event', function(data) {
-                alert("You hav a new message");
+                alert("You have a new message");
                 var a = document.createElement("a")
                 a.innerHTML = data;
                 document.getElementsByClassName('dropdown-content')[0].appendChild(a)
